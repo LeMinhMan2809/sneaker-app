@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Container from './components/Container'
 import HomeBanner from './components/HomeBanner'
 import { products } from '@/utils/products'
+import ProductCard from './components/products/ProductCard'
 
 export default function Home() {
   return (
@@ -9,9 +10,9 @@ export default function Home() {
         <div>
           <HomeBanner />
         </div>
-        <div className='grid grid-cols-3'>
+        <div className='grid grid-cols-3 gap-8'>
           {products.map((product: any) => {
-            return <div>{ product.name }</div>
+            return <ProductCard data={product}/>
           })}
         </div>
       </Container>

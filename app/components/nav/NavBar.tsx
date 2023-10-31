@@ -12,7 +12,7 @@ const NavBar = () => {
                     <div>Search</div>
                     <div className='flex items-center gap-8 md:gap-12'>
                         <div>CartCount</div>
-                        <div>UserMenu</div>
+                        <div>Login</div>
                     </div>
                 </div>
             </Container>
